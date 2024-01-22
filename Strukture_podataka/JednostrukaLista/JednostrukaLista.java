@@ -93,20 +93,16 @@ public class JednostrukaLista {
             insert_na_pocetak(data);
         } else {
             Node n = head;
-
             for (int i = 0; i < index - 1; i++) {
                 n = n.next;
-
             }
-
             node.next = n.next;
             n.next = node;
-
         }
-
+        
     }
 
-    public void deelete_na_poziciji(int index) {
+    public void delete_na_poziciji(int index) {
 
         if (index == 0) {
             delete_head();
